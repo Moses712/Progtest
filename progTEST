@@ -1,0 +1,41 @@
+public class Main {
+
+    public static void main(String args[]) {
+
+        String cities[] = {"Cape Town", "Port Elzabeth", "Pretoria"};
+        String consoles[] = {"PS5", "XBOX", "SWITCH"};
+
+        int salesData[][] = {{1000, 200, 3000}, {2000, 3000, 4000}, {1500, 1100, 1200}};
+
+        System.out.println("-------------------------------------------------");
+        System.out.println("GAMING CONSOLE REPORT");
+        System.out.println("-------------------------------------------------");
+        System.out.printf("-16s %-10s %10s% -10s%n", "", consoles[0], consoles[1], consoles[2]);
+
+        for (int; =0; i < cities.length; i++) {
+            System.out.print("-16s %-10d %10d% -10d%n", cities[i], salesData[i][0], salesData[i][1], salesData[i][2]);
+
+        }
+        System.out.println("----------------------------------");
+        System.out.println("CONSOLE SALES FOR EACH CITY");
+        System.out.println("----------------------------------");
+
+        int maxSales = 0;
+        String cityWithMostSales = "";
+
+        for (int i = 0; i < cities.length; i++) {
+            int cityTotal = salesData[i][j];
+
+            System.out.printf("%16s %d%n", cities[i], cityTotal);
+
+            if (cityTotal > maxSales)
+                maxSales = cityTotal;
+            cityWithMostSales = cities[i];
+        }
+
+    System.out.print("----------------------------------");
+    System.out.println("CITY WITH THE MOST SALES: " +cityWithMostSales);
+    System.out.print("----------------------------------");
+    }
+
+}
